@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import 'boxicons/css/boxicons.min.css';
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "700"], // adicione mais se quiser
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -20,6 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* CDN do Boxicons */}
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${montserrat.variable} antialiased`}>
         {children}
       </body>

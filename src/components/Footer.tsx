@@ -1,5 +1,6 @@
 import styles from './Footer.module.css';
 import Image from 'next/image';
+import Link from 'next/link'; // ⬅️ Import necessário
 
 export default function Footer() {
   return (
@@ -17,10 +18,11 @@ export default function Footer() {
         <div className={styles.column}>
           <h4 className={styles.sectionTitle}>Navegação</h4>
           <ul className={styles.navList}>
-            <li className={styles.navItem}>Principal</li>
-            <li className={styles.navItem}>Ver Atletas</li>
-            <li className={styles.navItem}>Sobre Nós</li>
-            <li className={styles.navItem}>Contato</li>
+            <li><Link href="/" className={styles.navItem}>Principal</Link></li>
+            <li><Link href="/jogador/listar" className={styles.navItem}>Ver Atletas</Link></li>
+            <li><Link href="/sobre" className={styles.navItem}>Sobre Nós</Link></li>
+            <li><Link href="#contato" className={styles.navItem}>Contato</Link></li>
+            <li><Link href="/planos" className={styles.navItem}>Planos</Link></li> {/* <-- novo item */}
           </ul>
         </div>
 
