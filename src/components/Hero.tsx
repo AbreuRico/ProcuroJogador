@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './Hero.module.css';
 import Link from 'next/link';
 import CardInfo from '@/components/CardInfo';
@@ -7,10 +9,18 @@ export default function Hero() {
     <>
       <section className={styles.hero}>
         <div className={styles.sliderWrapper}>
-          <div className={`${styles.slide} ${styles.slide1}`}></div>
-          <div className={`${styles.slide} ${styles.slide2}`}></div>
-          <div className={`${styles.slide} ${styles.slide3}`}></div>
-          <div className={`${styles.slide} ${styles.slide1}`}></div> {/* CLONE */}
+          <div className={styles.slide}>
+            <img src="/slides/carrossel1.jpg" alt="Slide 1" />
+          </div>
+          <div className={styles.slide}>
+            <img src="/slides/carrossel2.jpg" alt="Slide 2" />
+          </div>
+          <div className={styles.slide}>
+            <img src="/slides/carrossel3.jpg" alt="Slide 3" />
+          </div>
+          <div className={styles.slide}>
+            <img src="/slides/carrossel1.jpg" alt="Slide 1 (Clone)" />
+          </div>
         </div>
 
         <div className={styles.overlay}>
@@ -28,10 +38,6 @@ export default function Hero() {
                 Entrar como Olheiro
               </Link>
             </div>
-
-            <Link href="/jogador/listar" className={styles.link}>
-              Ver lista de jogadores cadastrados
-            </Link>
           </div>
         </div>
       </section>
@@ -39,27 +45,26 @@ export default function Hero() {
       {/* Cards logo abaixo do carrossel */}
       <section className={styles.cardsContainer}>
         <div className={styles.cardsWrapper}>
-        <CardInfo
-          icon="/icons/football-regular-24.png"
-          title="Mostre seu Talento"
-          description="Cadastre seu perfil e compartilhe seu desempenho com olheiros e clubes."
-          backgroundColor="#3a5550"
-/>
+          <CardInfo
+            icon="bx bx-football"
+            title="Mostre seu Talento"
+            description="Cadastre seu perfil e compartilhe seu desempenho com olheiros e clubes."
+            backgroundColor="#3a5550"
+          />
 
-        <CardInfo
-          icon="/icons/business-solid-24.png"
-          title="Encontre Atletas"
-          description="Visualize jogadores promissores e filtre por posição, idade e região."
-          backgroundColor="#f4ae31"
-        />
+          <CardInfo
+            icon="bx bx-building"
+            title="Encontre Atletas"
+            description="Visualize jogadores promissores e filtre por posição, idade e região."
+            backgroundColor="#f4ae31"
+          />
 
-        <CardInfo
-          icon="/icons/money-regular-24.png"
-          title="Invista no Futuro"
-          description="Conecte talentos com oportunidades reais no mundo do futebol."
-          backgroundColor="#3a5550"
-        />
-
+          <CardInfo
+            icon="bx bx-dollar-circle"
+            title="Invista no Futuro"
+            description="Conecte talentos com oportunidades reais no mundo do futebol."
+            backgroundColor="#3a5550"
+          />
         </div>
       </section>
     </>

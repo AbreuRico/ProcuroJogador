@@ -18,22 +18,11 @@ export default function Footer() {
         <div className={styles.column}>
           <h4 className={styles.sectionTitle}>Navegação</h4>
           <ul className={styles.navList}>
-            <li><Link href="/" className={styles.navItem}>Principal</Link></li>
-            <li><Link href="/jogador/listar" className={styles.navItem}>Ver Atletas</Link></li>
-            <li><Link href="/sobre" className={styles.navItem}>Sobre Nós</Link></li>
-            <li><Link href="#contato" className={styles.navItem}>Contato</Link></li>
-            <li><Link href="/planos" className={styles.navItem}>Planos</Link></li> {/* <-- novo item */}
-          </ul>
-        </div>
-
-        <div className={styles.separator}></div>
-
-        <div className={styles.column}>
-          <h4 className={styles.sectionTitle}>Serviços</h4>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>Agenciar</li>
-            <li className={styles.navItem}>Contratar</li>
-            <li className={styles.navItem}>Parcerias</li>
+            <li className={styles.navItem}><Link href="/">Principal</Link></li>
+            <li className={styles.navItem}><Link href="/jogador/listar">Ver Atletas</Link></li>
+            <li className={styles.navItem}><Link href="/sobre">Sobre Nós</Link></li>
+            <li className={styles.navItem}><Link href="/planos">Planos</Link></li>
+            <li className={styles.navItem}><Link href="/contato">Contato</Link></li> {/* NOVO */}
           </ul>
         </div>
 

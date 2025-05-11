@@ -10,8 +10,8 @@ export default function Navbar() {
         <Link href="/" className={styles.navLink}>Principal</Link>
         <Link href="/jogador/listar" className={styles.navLink}>Ver atletas</Link>
         <Link href="/sobre" className={styles.navLink}>Sobre nós</Link>
-        <Link href="#parceiros" className={styles.navLink}>Parceiros</Link>
-        <Link href="/planos" className={styles.navLink}>Planos</Link> {/* <-- novo item */}
+        <Link href="/planos" className={styles.navLink}>Planos</Link>
+        <Link href="/contato" className={styles.navLink}>Contato</Link> {/* NOVO */}
       </div>
     </nav>
   );
