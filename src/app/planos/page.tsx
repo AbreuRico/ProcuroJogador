@@ -21,6 +21,7 @@ export default function PlanosPage() {
               <div className="flex justify-center mb-4">
                 <Image src="/icons/free.png" alt="Plano Gratuito" width={200} height={200} />
               </div>
+
               <h2 className={styles.titulo}>Plano Gratuito</h2>
               <p className={`${styles.descricao} ${styles.textPadrao}`}>
                 Ideal para começar. Crie seu perfil, adicione dados básicos e esteja visível para olheiros.

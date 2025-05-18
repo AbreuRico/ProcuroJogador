@@ -17,3 +17,4 @@ export const getJogadores = async () => {
 
   return jogadores;
 }; 
+

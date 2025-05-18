@@ -94,5 +94,3 @@ export default function ListarJogadoresPage() {
 
       <Footer />
     </div>
-  );
-}
