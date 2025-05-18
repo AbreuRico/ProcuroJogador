@@ -7,11 +7,12 @@ export const getJogadores = async () => {
   const snapshot = await getDocs(ref);
 
   const jogadores = snapshot.docs
-    .map(doc => ({
-      id: doc.id,
-      ...doc.data()
-    }))
-    .filter(jogador => jogador.nome); // só inclui quem tem nome
+  .map((doc) => ({
+    id: doc.id,
+    ...(doc.data() as any)
+  }))
+  .filter((jogador) => jogador.nome);
+
 
   console.log("Jogadores válidos:", jogadores);
 

@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-<<<<<<< HEAD
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -9,15 +8,6 @@ import Footer from '@/components/Footer';
 import { getJogadores } from '@/utils/getJogadores';
 import styles from '@/components/VerTodosButton.module.css';
 import Image from 'next/image';
-=======
-import Link from 'next/link'; // ✅ Importado aqui
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Footer from '@/components/Footer';
-import PlayerCard from '@/components/PlayerCard';
-import { getJogadores } from '@/utils/getJogadores';
-import styles from '@/components/VerTodosButton.module.css';
->>>>>>> 4d49ec0a3e626df86abbf9df6d79769b3ab9edea
 
 export default function Home() {
   const [jogadores, setJogadores] = useState<any[]>([]);
@@ -25,14 +15,11 @@ export default function Home() {
   useEffect(() => {
     const fetchJogadores = async () => {
       const data = await getJogadores();
-<<<<<<< HEAD
+
       const ultimos = data
         .map((doc: any) => ({ id: doc.id, ...doc })) // ✅ inclui id
         .slice(-3)
         .reverse();
-=======
-      const ultimos = data.slice(-3).reverse();
->>>>>>> 4d49ec0a3e626df86abbf9df6d79769b3ab9edea
       setJogadores(ultimos);
     };
 

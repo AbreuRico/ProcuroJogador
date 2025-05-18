@@ -97,5 +97,4 @@ export default function CadastroOlheiro() {
       </main>
       <Footer />
     </>
-  );
-
+  );}
