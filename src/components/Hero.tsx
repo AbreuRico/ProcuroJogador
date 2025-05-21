@@ -1,4 +1,3 @@
-
 'use client';
 
 import styles from './Hero.module.css';
@@ -55,7 +54,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-
+      
       <section className={styles.cardsContainer}>
         <div className={styles.cardsWrapper}>
           <CardInfo

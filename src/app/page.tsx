@@ -15,7 +15,6 @@ export default function Home() {
   useEffect(() => {
     const fetchJogadores = async () => {
       const data = await getJogadores();
-
       const destacadosPrimeiro = data
         .map((doc: any) => ({ id: doc.id, ...doc }))
         .sort((a, b) => {
@@ -82,7 +81,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-
           ))}
         </div>
 

@@ -1,3 +1,4 @@
+
 // Código recebido acima com integração à API do IBGE para estados (UF) e cidades com datalist,
 // padronização de altura e peso via <select>, e estilização preservada conforme solicitado.
 
